@@ -76,7 +76,7 @@ void printStack()
     }
 }
 
-int main()
+void main()
 {
     push(1);
     push(2);
@@ -86,6 +86,4 @@ int main()
     printf("\n%d", peek());
 
     printf("\n%d", peep(3));
-
-    return 1;
 }
