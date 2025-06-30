@@ -38,6 +38,9 @@ int binarySearchRecursion(int *arr, int n, int target)
 
 int binarySearchRecursionHelper(int *arr, int low, int high, int target)
 {
+    if(low>high)
+        return -1;
+        
     int mid = (low + high) / 2;
     if (arr[mid] > target)
         return binarySearchRecursionHelper(arr, low, mid - 1, target);
